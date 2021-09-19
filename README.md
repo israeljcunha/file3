@@ -16,7 +16,6 @@ from pyconnectify.Calc.Math import ConversionChar
     BinStrToDecimal
     HexToInt
     IntToByte
-    
    
 from pyconnectify.Calc.Math import ConversionString
 
