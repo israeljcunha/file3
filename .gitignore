@@ -11,6 +11,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+dist/*
 downloads/
 eggs/
 .eggs/
@@ -23,6 +24,7 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
+*.egg-info/*
 .installed.cfg
 *.egg
 MANIFEST
@@ -106,6 +108,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+venv/*
 ENV/
 env.bak/
 venv.bak/
@@ -127,3 +130,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Editor
+.idea/*
