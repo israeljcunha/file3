@@ -1,6 +1,4 @@
-
 class ConversionChar(object):
-
     def __init__(self, arg):
         super(ConversionChar, self).__init__()
         self.arg = arg
@@ -46,7 +44,6 @@ class ConversionChar(object):
 
 
 class ConversionString(object):
-
     def __init__(self, arg):
         super(ConversionString, self).__init__()
         self.arg = arg
