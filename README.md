@@ -2,10 +2,13 @@
 Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, StrToBytes, StrToASCII, StrToBin)
 
 ## Install App
+
     pip install file3
  
 ## Config and Import Function
-    from pyconnectify.Calc.Math import ConversionChar
+
+from pyconnectify.Calc.Math import ConversionChar
+
     IntToBin
     IntToHex
     CharToASCII
@@ -15,7 +18,8 @@ Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrTo
     IntToByte
     
    
-    from pyconnectify.Calc.Math import ConversionString
+from pyconnectify.Calc.Math import ConversionString
+
     StrToHex
     StrToBytes
     StrToASCII
