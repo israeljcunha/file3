@@ -1,8 +1,7 @@
 class ConversionChar(object):
-    def __init__(self, arg):
+    def __init__(self):
         super(ConversionChar, self).__init__()
-        self.arg = arg
-
+        
     def CharToBin(self, strValue):
         number = bin(ord(strValue))[2:]
         if len(strValue) == 1:
