@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="file3",
-    version="0.0.1",
+    version="0.0.2",
     author="Israel Cunha",
     author_email="ms.israel.cunha@gmail.com",
     keywords='file files',
