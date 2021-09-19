@@ -1,1 +1,1 @@
-from file3.Math import ConversionChar, ConversionString
+from file3.math import ConversionChar, ConversionString
