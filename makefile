@@ -24,3 +24,8 @@ test_build:
 upload2:
 	pip install -U pip setuptools twine
 	python setup.py sdist bdist_wheel upload
+
+
+pre-commit-install:
+	pre-commit install
+	pre-commit run --all-files

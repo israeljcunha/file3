@@ -4,7 +4,7 @@ Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrTo
 ## Install App
 
     pip install file3
- 
+
 ## Config and Import Function
 
 from file3.Math import ConversionChar
@@ -16,7 +16,7 @@ from file3.Math import ConversionChar
     ConversionChar.BinStrToDecimal
     ConversionChar.HexToInt
     ConversionChar.IntToByte
-   
+
 from file3.math import ConversionString
 
     ConversionString.StrToHex
