@@ -20,3 +20,7 @@ update:
 test_build:
 	python3 -m pip install --upgrade twine
 	python3 -m twine upload --repository testpypi dist/*
+
+upload2:
+	pip install -U pip setuptools twine
+	python setup.py sdist bdist_wheel upload
