@@ -1,0 +1,81 @@
+default_language_version:
+    python: python3.8
+
+default_stages: [commit, push]
+
+repos:
+- repo: git@github.com:pre-commit/pre-commit-hooks
+  rev: 96df60f75ba7dc8e659a873a7a0d7fc377f61509
+  hooks:
+    - id: debug-statements
+    - id: trailing-whitespace
+      args: [--markdown-linebreak-ext=md]
+    - id: check-merge-conflict
+    - id: check-ast
+    - id: check-byte-order-marker
+    - id: check-json
+    - id: check-symlinks
+    - id: check-vcs-permalinks
+    - id: check-xml
+    - id: check-yaml
+    - id: detect-aws-credentials
+      args: ['--allow-missing-credentials']
+    - id: detect-private-key
+    - id: forbid-new-submodules
+    - id: end-of-file-fixer
+
+- repo: local
+  hooks:
+    - id: validate-commit-msg
+      name: validate-commit-msg
+      entry: ./.github/scripts/validate_commit_msg.sh
+      language: script
+      stages: [commit-msg]
+    - id: check-datetime-now
+      name: check_datetime_now
+      description: Prefer datetime.utcnow()
+      language: pygrep
+      entry: 'datetime\.now\(\)'
+      types: [python]
+    # - id: pylint-check
+    #   name: pylint-check
+    #   entry: bash -c 'find . -name "*.py" -not -path "./venv/*" | xargs pylint'
+    #   language: system
+    #   types: [python]
+    #   pass_filenames: false
+    #   always_run: true
+    # - id: pytest-check
+    #   name: pytest-check
+    #   entry: pytest
+    #   language: system
+    #   types: [python]
+    #   pass_filenames: false
+      # always_run: true
+
+# - repo: https://gitlab.com/pycqa/flake8
+#   rev: 62cf28bf091826008796105f93231438af93a534
+#   hooks:
+#     - id: flake8
+#       name: flake8
+#       additional_dependencies: [flake8-bugbear]
+
+# - repo: https://github.com/timothycrosley/isort
+#   rev: bf9398ea0fed45ad1cd2899b8fd1d1c15190f025
+#   hooks:
+#     - id: isort
+#       name: isort
+#       args: ['--check-only', '--diff']
+#       additional_dependencies: ['toml']
+
+# - repo: https://github.com/pre-commit/pygrep-hooks
+#   rev: f12498ba8ea83a10b3739dbe4dad2142e5328a7c
+#   hooks:
+#     - id: python-check-mock-methods
+#       name: python-check-mock-methods
+
+# - repo: https://github.com/python/black
+#   rev: 41e670064063e3e221b1c3c40db5aaae784b5231
+#   hooks:
+#     - id: black
+#       name: black
+#       additional_dependencies: ['toml']

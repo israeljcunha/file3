@@ -5,16 +5,16 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="file3",
-    version="0.0.3",
+    version="0.1.0",
     author="Israel Cunha",
     author_email="ms.israel.cunha@gmail.com",
-    keywords='file files',
+    keywords="file files",
     description="Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, StrToBytes, StrToASCII, StrToBin)n",
-    license='Python License',
+    license="Python License",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/israeljcunha/file3",
-    packages=setuptools.find_packages(exclude=['venv','file-test-env']),
+    packages=setuptools.find_packages(exclude=["venv", "file-test-env"]),
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -24,5 +24,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3',
+    python_requires=">=3",
 )
