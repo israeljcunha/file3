@@ -1,12 +1,12 @@
 class ConversionChar(object):
     def __init__(self):
         super(ConversionChar, self).__init__()
-        
+
     def CharToBin(strValue):
         number = bin(ord(strValue))[2:]
         if len(strValue) == 1:
             return number
-        return number[len(number) - strValue:]
+        return number[len(number) - strValue :]
 
     def IntToBin(intValue):
         if intValue == 1:
@@ -22,13 +22,15 @@ class ConversionChar(object):
 
     def CharToASCII(Character):
         if isinstance(Character, str) and len(Character) == 1:
-            return dict([('int', ord(Character)), ('str', '{0}'.format(ord(Character)))])
+            return dict(
+                [("int", ord(Character)), ("str", "{0}".format(ord(Character)))]
+            )
         else:
             raise ValueError("You can only convert one letter")
 
     def CharToHex(self, value):
         try:
-            return '{0}'.format(hex(ord(value)).replace('0x', ''))
+            return "{0}".format(hex(ord(value)).replace("0x", ""))
         except Exception as e:
             raise ValueError("You can only convert one letter")
 
@@ -51,20 +53,20 @@ class ConversionString(object):
         for char in str_value:
             unit_hex = ConversionChar.CharToHex(self, char)
             if len(unit_hex) == 1:
-                unit_hex = '0' + unit_hex
-            related.update({char : unit_hex})
+                unit_hex = "0" + unit_hex
+            related.update({char: unit_hex})
         return related
 
     def StrToBytes(str_value):
         related = dict()
         for char in str_value:
-            related.update({char: bytes(ConversionChar.CharToASCII(self, char)['int'])})
+            related.update({char: bytes(ConversionChar.CharToASCII(self, char)["int"])})
         return related
 
     def StrToASCII(str_value):
         related = dict()
         for char in str_value:
-            related.update({char: ConversionChar.CharToASCII(self, char)['int']})
+            related.update({char: ConversionChar.CharToASCII(self, char)["int"]})
         return related
 
     def StrToBin(str_value):
