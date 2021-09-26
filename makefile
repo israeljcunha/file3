@@ -48,5 +48,6 @@ clean:
 	@find . -iname '*~' -delete
 	@find . -iname '*.swp' -delete
 	@find . -iname '__pycache__' -delete
-
+	@find . -iname '.benchmarks' -delete
+	@find . -iname '.pytest_cache' -exec rm -rf "{}" \+
 clean_all: clean-eggs clean-build clean
