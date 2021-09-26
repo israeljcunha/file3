@@ -63,6 +63,7 @@ clean_all: clean-eggs clean-build clean
 ####
 unit:
 	python3 -m unittest -v -f
+	coverage report -m
 
 export_test:
 	pip freeze > .requirements.test
