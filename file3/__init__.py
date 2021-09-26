@@ -1,1 +1,4 @@
-from file3.math import ConversionChar, ConversionString
+from file3.strings import Strings
+from file3.chars import Chars
+from file3.hexadecimals import Hexadecimal
+from file3.integers import Integers
