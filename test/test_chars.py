@@ -1,9 +1,10 @@
 from file3.chars import Chars
+from unittest import TestCase
 
+class TestChars(TestCase):
+    def test_one_plus_one_is_equal_two(self):
+        based_str = "1"
+        correct_value = "110001"
 
-def test_to_binary():
-    based_str = "12"
-    correct_value = "1100"
-
-    process_value = Chars.to_binary(based_str)
-    assert process_value == correct_value
+        result = Chars.to_binary(based_str)
+        self.assertEqual(result, correct_value)

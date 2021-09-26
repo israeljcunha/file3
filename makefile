@@ -54,7 +54,10 @@ clean_all: clean-eggs clean-build clean
 
 
 ####
-## Requirements
+## Tests
 ####
-export-test:
+unit:
+	python3 -m unittest
+
+export_test:
 	pip freeze > .requirements.test
