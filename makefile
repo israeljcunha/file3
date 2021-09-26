@@ -1,3 +1,6 @@
+##
+# Build library
+###
 update_twine:
 	python3 -m pip install --upgrade twine
 
@@ -25,6 +28,9 @@ upload2:
 	pip install -U pip setuptools twine
 	python setup.py sdist bdist_wheel upload
 
+###
+# Pre commits
+###
 pre-commit-install:
 	pre-commit install
 	pre-commit run --all-files
@@ -51,7 +57,6 @@ clean:
 	@find . -iname '.pytest_cache' -exec rm -rf "{}" \+
 
 clean_all: clean-eggs clean-build clean
-
 
 ####
 ## Tests
