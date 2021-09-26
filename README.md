@@ -1,5 +1,17 @@
 # file3
-Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, StrToBytes, StrToASCII, StrToBin)
+Converting Files and Types
+
+    IntToBin,
+    IntToHex,
+    CharToASCII,
+    CharToHex,
+    BinStrToDecimal,
+    HexToInt,
+    IntToByte,
+    StrToHex,
+    StrToBytes,
+    StrToASCII,
+    StrToBin
 
 ## Install App
 
