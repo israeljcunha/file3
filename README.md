@@ -72,7 +72,7 @@ For Integers conversion, just import the resources.
 
 - Performs string to hexadecimal conversion, with dict formatted response
 
-        Strings.to_hexadecimal("1") => return 1
+        Strings.to_hexadecimal("1") => return {'1': '31'}
 
 - Performs string-to-byte conversion, with dict formatted response
 
