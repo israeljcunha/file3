@@ -16,9 +16,7 @@ import setuptools
 
 _PACKAGE_VERSION = '0.1.4'
 _PACKAGE_NAME = 'file3'
-
 _KEYWORDS = "file files file3"
-
 _SET_DESCRIPTION = "Converting Files and Types"
 
 def get_long_description():
