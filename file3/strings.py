@@ -8,7 +8,7 @@ class Strings(object):
     def to_hexadecimal(str_value: str) -> dict:
         related = dict()
         for char in str_value:
-            unit_hex = Strings.to_hexadecimal(char)
+            unit_hex = Chars.to_hexadecimal(char)
             if len(unit_hex) == 1:
                 unit_hex = "0" + unit_hex
             related.update({char: unit_hex})
