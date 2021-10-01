@@ -28,8 +28,6 @@ def get_long_description():
         long_description = fh.read()
     return long_description
 
-# ----------------------------------------------------------------------------------------------
-
 setuptools.setup(
     name=_PACKAGE_NAME,
     version=_PACKAGE_VERSION,

@@ -2,7 +2,7 @@ class Chars(object):
     def __init__(self) -> None:
         super().__init__()
 
-    def to_binary(char_value: str):
+    def to_binary(char_value: str) -> str:
         number = bin(ord(char_value))[2:]
         if len(char_value) == 1:
             return number
