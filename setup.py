@@ -14,14 +14,12 @@ file3
 """
 import setuptools
 
-_PACKAGE_VERSION = '0.1.2'
+_PACKAGE_VERSION = '0.1.4'
 _PACKAGE_NAME = 'file3'
 
 _KEYWORDS = "file files file3"
 
-_SET_DESCRIPTION = "Converting Files and Types (IntToBin, IntToHex, CharToASCII, \
-            CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, \
-            StrToBytes, StrToASCII, StrToBin)"
+_SET_DESCRIPTION = "Converting Files and Types"
 
 def get_long_description():
     with open("README.md", "r") as fh:
